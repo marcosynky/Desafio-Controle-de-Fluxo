@@ -1,0 +1,12 @@
+public class ParametrosInvalidosException extends Exception{
+    public static void main(String[] args) {
+        try {
+            Contador.contar (2, 1);
+
+        } catch (ParametrosInvalidosException e) {
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+        }
+
+    }
+
+}
